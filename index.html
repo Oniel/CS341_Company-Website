@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 
+		Created by Oniel Toledo
+		On 09-07-2014
+		10 website headers
+	-->
+	<title>Scooni</title>
+	<link rel="shortcut icon" href="imgs/thumb.png">
+	 <link rel="stylesheet" type="text/css" href="styles.css">
+	 <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+</head>
+<body onload="initRun()">
+	<!-- Top Header -->
+	<div class="topHeader">
+		<div style="display:inline-block">Scooni Technology Migrations. 
+			<div class="lowerHeader">Bring you business into the modern world, the online world</div>
+		</div>
+	</div>
+	<!-- Body Content -->
+	<!-- Navigation -->
+
+	<div class="spacer"></div>
+	<div class="container">
+		<div class="LPanel">&nbsp;</div>
+		<div class="navigationPanel">
+			<ul>
+			</ul>
+			<span class="header"><a id="1" class="header" onclick="changeMain(this.id)">What We Do</span>
+			<ul>
+				<li><a id="1" onclick="changeMain(this.id)">Complete Solution</a></li>
+				<li><a id="2" onclick="changeMain(this.id)">Websites</a></li>
+				<li><a id="3" onclick="changeMain(this.id)" >Mobile Applications</a></li>
+				<li><a id="4" onclick="changeMain(this.id)" style="color:#4285f4">Data Digitization</a></li>
+				<li><a id="5" onclick="changeMain(this.id)">Bug Hunting & Updating</a></li>
+				<!-- <li><a id="6" onclick="changeMain(this.id)">Advertise You</a></li> -->
+			</ul><br />
+			<span class="header">Contact Us!</span>
+			<ul>
+				<li><a id="9" onclick="changeMain(this.id)">Contact Us Directly</a></li>
+				<li><a id="10" onclick="changeMain(this.id)" style="color:#4285f4">Estimate Inquiry</a></li>
+				<!-- <li><a id="6" onclick="changeMain(this.id)">Advertise You</a></li> -->
+			</ul>
+		</div>
+
+		<div id="main" class="contentPanel">
+
+		</div>
+
+		<div class="RPanel">
+			<span class="header" style="color:#ccc;">Stay connected with us!</span>
+			<table>
+				<tr><td><a href="https://www.facebook.com" target="_blank">
+						<img class="smIcons" src="imgs/sm/fb.png" alt="link to our facebook page" 
+						title="check us out on FaceBook"></a>
+					</td>
+					<td><a href="http://www.twitter.com" target="_blank">
+						<img class="smIcons" src="imgs/sm/twitter.png" alt="link to our twitter page" 
+						title="keep up with our news on twitter" ></a>
+					</td>
+				</tr>
+				<tr><td><a href="http://www.linkedin.com" target="_blank">
+						<img class="smIcons" src="imgs/sm/in.png" alt="link to our LinkedIn page" 
+						title="network with us on linkedIn" ></a>
+					</td>
+					<td><a href="http://www.youtube.com" target="_blank">
+						<img class="smIcons" src="imgs/sm/yt.png" alt="link to our YouTube Channel" 
+						title="See our YouTube channel for simple tutorials on making your site great!"></a>
+					</td>
+				</tr>
+				<tr><td><a href="http://www.blogger.com" target="_blank">
+						<img class="smIcons" src="imgs/sm/blogger.png" alt="link to our blog" 
+						title="Check our regular blog posts for tips and recommendations on setting up an awsome website!"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+<!-- <div id="vertinav">
+	<div id="vertinav">
+		
+	</div> -->
+
+	<script type="text/javascript">
+	function initRun(){
+		changeMain("1");
+	}
+	function changeMain(id){
+		var str = "";
+		console.log(id);
+		switch (id){
+			case "1":
+			str = "			<p> " +
+			  "<img src=\"imgs/worldnetwork.png\" alt=\"World Network\" " +
+			  "style=\"float:right;width:200px;height:200px\"> " +
+			  "If you\'re business doesn't have a web presence chances are you are losing money " +
+			  "and potential clients. An online web presence is the fastest, easiest, and cheapest " +
+			 " way to advertise your business and allow it to be seen by millions." +
+			  "<br>" +
+			 " That's where we come in. " +
+			 " <br>" +
+			 " Scooni Tech Migrations is the go to place for establishing you're business's presence " +
+			 " on the online world. We do everything from simple websites to database driven, high " +
+			 " traffic sites. Our work includes not just making websites but also mobile application "  +
+			 " development on all platforms, maintaining/updating your already created sites, and " +
+			 " getting buzz for your business online." +
+			 " <br>" +
+
+			"</p>";
+			break;
+			case "2":
+				str = "<p>This is the core tech presence of any good company, a rock solid website. <br><img src=\"imgs/blankwebsite.png\" alt=\"Websites\"" +
+			  "style=\"float:right;width:400px;height:300px;border-radius:10px;margin-top:5px;\">" +
+				"" +
+				"  This is where you present yourself to the world, your website is your companys " +
+			"	 first impression to any potential customers so it must be flawless yet simple.<br>" +
+			 " We have 100s of prefabricated templates to choose from for your business needs, based on " +
+			 " your business and the extent of your needs we'll filter out the best templates and " +
+			  "present them to you so you can have a final say in what you like.<br>" +
+			" Best of all since our templates are prefabricated building your site can be done quickly " +
+			" and take a matter of hours or day not weeks. " +
+			" <br>**We also make customized templates and build based on your designs.<br></p>";
+			break;
+			case "3":
+				str = "<p style=\"margin-top: 30px;\">" +
+			  "<img src=\"imgs/apps.png\" alt=\"World Applications\"" +
+			  "style=\"float:right;margin-top:20px;margin-left: 20px;\">" +
+			  "The future of the consumer networking lies in the mobile-tablets and phones." +
+			  "If you feel that you're customers would benefit from having app pertaining to your " +
+			  "business's services, why not let us make one? " +
+			  "<br>We can do it all: <br>android, apple, windows, and blackberry. " +
+			"</p> ";
+			break;
+			case "4":
+				str = 			"<p><img src=\"imgs/dot.png\" alt=\"Currently under construction\"" +
+			  "style=\"margin-left:100px;margin-right:30px;float:left;width:200px;height:200px\">" +
+			  "Our company will soon help business migrate their paper data into the digital world, " +
+			  "our goal is to allow you to share your documents within you company on a secured internal " +
+			  "website that efficiently manages your documents.<br></p> ";
+			break;
+			case "5":
+				str = "<p>" +
+			  "Perhaps you\'ve already got a website but there are problems with it or maybe " +
+			  "you just need to update it, we can help with that too. " +
+			 " <br>" +
+				" If you\'re site is experiencing issues or there are bugs we can fix them quickly! " +
+			 " <br>" +
+			 " If you\'re site is old and outdated we can fix that too! " +
+			 " <br>" +
+			 " If you simply need information on the site updated we can do that and show you " +
+			 " how to do it on your own as well!" +
+			 " <br>" +
+			"	<img src=\"imgs/webfix.jpg\" alt=\"Website Maintence\" " +
+			 " style=\"border-radius: 25px;margin-left:52px;margin-top:20px;width:300;height:200px\"> " +
+			"</p>" ;
+			break;
+			case "9":
+				str = 			"<p class=\"header\" style=\"font-size:30px;text-align:center;margin-top:100px;\"> "+
+				"<span style=\"color:#4285f4;\">CEO & Founder</span><br>Oniel Toledo<br>toledooniel@gmail.com <br><br>" +
+				"<span style=\"color:#4285f4;\">Our Office Location</span><br>5431 byte road" +
+				"<br>Henderson, NV &nbsp;&nbsp; 89011</p>" ;
+			break;
+			case "10":
+				str += "			<p class=\"header\" style=\"color:#4285f4;text-align:center\">Want a <span style=\"color:#DDD\">quick <\/span>";
+				str += "				estimate?";
+				str += "				<br>Give us a brief description of your company, what services you'd be interested, and any other info";
+				str += "				then hit <span style=\"color:#E51111\">send<\/span>!<\/p>";
+				str += "			<fieldset>";
+				str += "				<legend>Inquiry Form<\/legend>";
+				str += "				<form>";
+				str += "					Contact Information<br>";
+				str += "					<table>";
+				str += "						<tr>";
+				str += "							<td>Company Name:<\/td>";
+				str += "							<td><input id=\"compName\" type=\"text\" ><\/td>";
+				str += "						<\/tr>";
+				str += "						<tr>";
+				str += "							<td>Contact Name:<\/td>";
+				str += "							<td><input id=\"contName\" type=\"text\"><\/td>";
+				str += "						<\/tr>";
+				str += "						<tr>";
+				str += "							<td>Contact Phone Number:<\/td>";
+				str += "							<td><input id=\"contPhone\" type=\"text\"><\/td>";
+				str += "						<\/tr>";
+				str += "						<tr>";
+				str += "							<td>Contact Email:<\/td>";
+				str += "							<td><input id=\"contEmail\" type=\"text\"><\/td>";
+				str += "						<\/tr>";
+				str += "					<\/table>";
+				str += "					Desired Services<br>";
+				str += "					<input type=\"checkbox\" style=\"margin-left:10px;\" id=\"complete\"> Complete Solution<br>";
+				str += "					<input type=\"checkbox\" style=\"margin-left:10px;\" id=\"website\"> Website<br>";
+				str += "					<input type=\"checkbox\" style=\"margin-left:10px;\" id=\"mobile\"> Mobile Application<br>";
+				str += "					<input type=\"checkbox\" style=\"margin-left:10px;\" id=\"data\"> Data Digitization<br>";
+				str += "					<input type=\"checkbox\" style=\"margin-left:10px;\" id=\"maintence\"> Maintence<br>";
+				str += "					Brief description of what functionality you'd like<br>";
+				str += "					<textarea rows=\"4\" cols=\"50\" id=\"description\"><\/textarea><br>";
+				str += "					Desired Completion Date: <input type=\"text\"><br>";
+				str += "					<input type=\"submit\" value=\"Submit\" onclick=\"checkSubmission()\">";
+				str += "			<\/form>";
+				str += "			<\/fieldset>";
+				str += "";
+				str += "";
+				str += "			<p class=\"header\" style=\"color:#4285f4;text-align:center\">";
+				str += "				<br>We will review your inquiry and get back to you with a ball park estimate within <span style=\"color: #DDD;\">24 hours<\/span>!<\/p>";
+			break;
+			case "11":
+			break;
+
+		}
+		document.getElementById("main").innerHTML = str;
+	}
+
+	function checkSubmission(){
+		var str ="";
+		if(document.getElementById("compName").value == ""){
+			str +="Please enter a company name or personal name to continue \n";
+		}
+		if(document.getElementById("contName").value == ""){
+			str +="Please include a contact name \n";
+		}
+		if(document.getElementById("contPhone").value == ""){
+			str +="Please include a contact phone number \n";
+		}
+		if(document.getElementById("contEmail").value == ""){
+			str +="Please include a valid email so we may resond about the inquiry\n";
+		}
+
+		if(document.getElementById("description").value == ""){
+			str +="Please include at least a brief description regarding the functionality you'd like \n";
+		}
+		if(str != "")
+			alert(str);
+		else 
+			alert("Thanks for your submission!");
+
+	}
+	</script>
+</body>
+</html>
